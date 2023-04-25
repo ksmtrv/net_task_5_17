@@ -9,8 +9,12 @@ namespace net_task_5_17
 
         public Triangle(bool isFull, double side)
         {
+            if (side < 0)
+            {
+                throw new ArgumentException("Side must be greater than 0!");
+            }
+            this.side = side;            
             this.isFull = isFull;
-            this.side = side;
         }
 
         public double CountThirdSide()
