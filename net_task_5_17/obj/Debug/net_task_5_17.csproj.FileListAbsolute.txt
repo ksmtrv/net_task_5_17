@@ -1,0 +1,7 @@
+D:\C#\net_task_5_17\net_task_5_17\bin\Debug\net_task_5_17.exe
+D:\C#\net_task_5_17\net_task_5_17\bin\Debug\net_task_5_17.pdb
+D:\C#\net_task_5_17\net_task_5_17\obj\Debug\net_task_5_17.csproj.AssemblyReference.cache
+D:\C#\net_task_5_17\net_task_5_17\obj\Debug\net_task_5_17.csproj.SuggestedBindingRedirects.cache
+D:\C#\net_task_5_17\net_task_5_17\obj\Debug\net_task_5_17.csproj.CoreCompileInputs.cache
+D:\C#\net_task_5_17\net_task_5_17\obj\Debug\net_task_5_17.exe
+D:\C#\net_task_5_17\net_task_5_17\obj\Debug\net_task_5_17.pdb
