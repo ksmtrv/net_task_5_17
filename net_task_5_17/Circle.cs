@@ -4,16 +4,11 @@ namespace net_task_5_17
 {
     public class Circle : GeometricFigure
     {
-        public bool isFull { get; set; }
+        private bool isFull { get; set; }
 
-        public Circle(bool isFull)
+        public Circle(string name, string colour, double length, bool isFull): base(name, colour, length)
         {
             this.isFull = isFull;
-        }
-
-        public double CountSectorArea(double angle = 10)
-        {
-            return Math.PI * length * length * angle / 360;
         }
 
         public override double CountArea() 
@@ -24,6 +19,13 @@ namespace net_task_5_17
         public override double CountPerimeter()
         {
             return 2 * Math.PI * length;
+        }
+        
+        public override string ToString()
+        {
+            return $"Circle:\n" +
+                   $"Name -> {name}, colour -> {colour},\n" +
+                   $"length -> {length}, full -> {isFull}, area -> {CountArea()}, perimeter -> {CountPerimeter()}";
         }
     }
 }

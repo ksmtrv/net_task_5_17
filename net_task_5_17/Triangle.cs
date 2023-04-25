@@ -4,11 +4,11 @@ namespace net_task_5_17
 {
     public class Triangle : GeometricFigure
     {
-        public bool isFull { get; set; }
-        public double side { get; set; }
-        public double angle { get; set; }
+        private bool isFull { get; set; }
+        private double side { get; set; }
+        private double angle { get; set; }
 
-        public Triangle(double side, double angle, bool isFull)
+        public Triangle(string name, string colour, double length, double side, double angle, bool isFull) : base(name, colour, length)
         {
             if (side < 0)
             {
@@ -39,6 +39,13 @@ namespace net_task_5_17
         {
             double thirdSide = CountThirdSide();
             return length * side * thirdSide;
+        }
+        
+        public override string ToString()
+        {            
+            return $"Triangle:\n" +
+                   $"Name -> {name}, colour -> {colour},\n" +
+                   $"length -> {length}, side -> {side}, angle -> {angle}, full -> {isFull}, area -> {CountArea()}, perimeter -> {CountPerimeter()}";
         }
     }
 }

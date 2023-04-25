@@ -4,11 +4,11 @@ namespace net_task_5_17
 {
     public class Rhombus : GeometricFigure
     {
-        public bool isFull { get; set; }
+        private bool isFull { get; set; }
         
         private double height;
 
-        public Rhombus(double height, bool isFull)
+        public Rhombus(string name, string colour, double length, double height, bool isFull) : base(name, colour, length)
         {
             if (height < 0)
             {
@@ -29,5 +29,11 @@ namespace net_task_5_17
             return 4 * length;
         }
 
+        public override string ToString()
+        {
+            return $"Rhombus:\n" +
+                   $"Name -> {name}, colour -> {colour},\n" +
+                   $"length -> {length}, height -> {height}, full -> {isFull}, area -> {CountArea()}, perimeter -> {CountPerimeter()}";
+        }
     }
 }
