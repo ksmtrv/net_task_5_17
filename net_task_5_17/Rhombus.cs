@@ -28,16 +28,6 @@ namespace net_task_5_17
         {
             return 4 * length;
         }
-        
-        public double CountAreaWithAngle(double angle = 45)
-        {
-            return length * length * Math.Sin(angle);
-        }
 
-        public double CountAreaWithHeight(double height = 10)
-        {
-            return height * length;
-        }
-        
     }
 }
