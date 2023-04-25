@@ -21,6 +21,11 @@ namespace net_task_5_17
 
         public abstract double CountArea();
         public abstract double CountPerimeter();
-        public abstract string ToString();
+
+        public virtual string ToString()
+        {
+            return $"Name -> {name}, colour -> {colour}, length -> {length},\n" +
+                   $"area -> {CountArea()}, perimeter -> {CountPerimeter()},\n";
+        }
     }
 }

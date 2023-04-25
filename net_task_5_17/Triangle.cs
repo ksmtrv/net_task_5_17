@@ -43,9 +43,7 @@ namespace net_task_5_17
         
         public override string ToString()
         {            
-            return $"Triangle:\n" +
-                   $"Name -> {name}, colour -> {colour},\n" +
-                   $"length -> {length}, side -> {side}, angle -> {angle}, full -> {isFull}, area -> {CountArea()}, perimeter -> {CountPerimeter()}";
+            return base.ToString() + $"side -> {side}, angle -> {angle}, full -> {isFull}";
         }
     }
 }

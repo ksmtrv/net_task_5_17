@@ -31,9 +31,7 @@ namespace net_task_5_17
 
         public override string ToString()
         {
-            return $"Rhombus:\n" +
-                   $"Name -> {name}, colour -> {colour},\n" +
-                   $"length -> {length}, height -> {height}, full -> {isFull}, area -> {CountArea()}, perimeter -> {CountPerimeter()}";
+            return base.ToString() + $"height -> {height}, full -> {isFull}";
         }
     }
 }
