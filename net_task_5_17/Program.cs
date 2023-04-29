@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace net_task_5_17
 {
-    internal class Program
+    class Program
     {
         public static void Main(string[] args)
         {

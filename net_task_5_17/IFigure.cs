@@ -3,9 +3,7 @@
     public interface IFigure
     {
         string Name { get; set; }
-        string Colour { get; set; }
         double CountArea();
         double CountPerimeter();
-        string ToString();
     }
 }

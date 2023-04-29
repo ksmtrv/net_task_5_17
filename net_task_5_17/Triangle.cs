@@ -27,18 +27,18 @@ namespace net_task_5_17
 
         public double CountThirdSide()
         {
-            return Math.Sqrt(length * length + Side * Side - 2 * length * Side * Math.Cos(Angle * Math.PI*180));
+            return Math.Sqrt(Length * Length + Side * Side - 2 * Length * Side * Math.Cos(Angle * Math.PI*180));
         }
 
         public override double CountArea()
         {
-            return length * Side * Math.Sin(Angle * Math.PI * 180);
+            return Length * Side * Math.Sin(Angle * Math.PI * 180);
         }
         
         public override double CountPerimeter()
         {
             double thirdSide = CountThirdSide();
-            return length * Side * thirdSide;
+            return Length * Side * thirdSide;
         }
         
         public override string ToString()

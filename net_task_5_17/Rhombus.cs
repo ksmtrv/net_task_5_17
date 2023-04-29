@@ -21,12 +21,12 @@ namespace net_task_5_17
 
         public override double CountArea()
         {
-            return height * length;
+            return height * Length;
         }
 
         public override double CountPerimeter()
         {
-            return 4 * length;
+            return 4 * Length;
         }
 
         public override string ToString()

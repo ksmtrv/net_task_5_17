@@ -13,12 +13,12 @@ namespace net_task_5_17
 
         public override double CountArea() 
         {
-            return Math.PI * length * length;
+            return Math.PI * Length * Length;
         }
         
         public override double CountPerimeter()
         {
-            return 2 * Math.PI * length;
+            return 2 * Math.PI * Length;
         }
         
         public override string ToString()
