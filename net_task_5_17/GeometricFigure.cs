@@ -4,14 +4,14 @@ namespace net_task_5_17
 {
     public abstract class GeometricFigure : IFigure
     {
-        public string name { get; set; }
-        public string colour { get; set; }
+        public string Name { get; set; }
+        public string Colour { get; set; }
         public double length { get; set; }
 
         protected GeometricFigure(string name, string colour, double length)
         {
-            this.name = name;
-            this.colour = colour;
+            this.Name = name;
+            this.Colour = colour;
             if (length < 0)
             {
                 throw new ArgumentException("Length must be greater than 0!");
@@ -24,7 +24,7 @@ namespace net_task_5_17
 
         public virtual string ToString()
         {
-            return $"Name -> {name}, colour -> {colour}, length -> {length},\n" +
+            return $"Name -> {Name}, colour -> {Colour}, length -> {length},\n" +
                    $"area -> {CountArea()}, perimeter -> {CountPerimeter()},\n";
         }
     }

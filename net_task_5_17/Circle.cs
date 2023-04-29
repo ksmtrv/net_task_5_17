@@ -4,11 +4,11 @@ namespace net_task_5_17
 {
     public class Circle : GeometricFigure
     {
-        private bool isFull { get; set; }
+        private bool IsFull { get; set; }
 
         public Circle(string name, string colour, double length, bool isFull): base(name, colour, length)
         {
-            this.isFull = isFull;
+            this.IsFull = isFull;
         }
 
         public override double CountArea() 
@@ -23,7 +23,7 @@ namespace net_task_5_17
         
         public override string ToString()
         {
-            return base.ToString() + $"full -> {isFull}";
+            return base.ToString() + $"full -> {IsFull}";
         }
     }
 }

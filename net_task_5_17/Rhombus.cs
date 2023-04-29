@@ -4,7 +4,7 @@ namespace net_task_5_17
 {
     public class Rhombus : GeometricFigure
     {
-        private bool isFull { get; set; }
+        private bool IsFull { get; set; }
         
         private double height;
 
@@ -15,7 +15,7 @@ namespace net_task_5_17
                 throw new ArgumentException("Height must be greater than 0!");
             }
             this.height = height;
-            this.isFull = isFull;
+            this.IsFull = isFull;
             
         }
 
@@ -31,7 +31,7 @@ namespace net_task_5_17
 
         public override string ToString()
         {
-            return base.ToString() + $"height -> {height}, full -> {isFull}";
+            return base.ToString() + $"height -> {height}, full -> {IsFull}";
         }
     }
 }

@@ -2,8 +2,8 @@
 {
     public interface IFigure
     {
-        string name { get; set; }
-        string colour { get; set; }
+        string Name { get; set; }
+        string Colour { get; set; }
         double CountArea();
         double CountPerimeter();
         string ToString();
