@@ -7,7 +7,6 @@ namespace net_task_5_17
     {
         public static void Main(string[] args)
         {
-            
             List<IFigure> figures = new List<IFigure>();
             figures.Add(new Rhombus("Rhombus","Red", 14,10, true));
             figures.Add(new Circle("Circle", "Blue", 10, true));
@@ -19,6 +18,5 @@ namespace net_task_5_17
                 Console.WriteLine("-----");
             }
         }
-
     }
 }
